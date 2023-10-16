@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --nav--bg--color: #466428;
+    --nav--text--color: white;
+}
+
+.fotoLogo {
+    width: 20rem;
+    height: 20rem;
+}
+
+.nav {
+    width: 21rem;
+    height: 75rem;
+    background-color: var(--nav--bg--color);
+    color: var(--nav--text--color);
+    display: flex;
+    flex-direction: column;
+
+}
+.nome {
+    font-size: 5rem;
+    text-align: center;
+}
+
+ul {
+   list-style-type: none;
+   font-size: 3rem;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--nav--text--color);
+    display: block;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.background {
+    background-color: black;
+    opacity: 0.9;
+}
+
+body {
+    background-image: url("imageBg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
