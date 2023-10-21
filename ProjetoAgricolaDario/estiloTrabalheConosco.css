@@ -76,3 +76,38 @@ input {
     width: 100%;
     padding: 2px
 }
+
+.botoes{
+
+    margin-top: 10px;
+    display:flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+#Enviar{
+
+    color: #33B300;
+    width: 143px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;  
+    
+}
+
+input[type=file]{
+
+    display: none;
+
+}
+
+label[for=curriculo]{
+
+    border: 2px solid black;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+
+
+}
