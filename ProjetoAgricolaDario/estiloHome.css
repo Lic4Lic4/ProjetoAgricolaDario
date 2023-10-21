@@ -57,9 +57,16 @@ ul a {
 
 .container3 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20rem;
+    margin: 19rem 19rem 19rem 19rem;
+}
+
+.fotoCarrossel {
+    width: 50rem;
+    height: 30rem;
+}
+
+p {
+    margin-right: 7rem;
 }
 
 body {
@@ -69,4 +76,5 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: var(--bg--text--color);
+    font-size: 2rem;
 }
