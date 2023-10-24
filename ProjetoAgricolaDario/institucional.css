@@ -8,6 +8,7 @@
     font-size: 62.5%;
     --nav--bg--color: #466428;
     --nav--text--color: white;
+    --body--text--color: white;
 }
 
 .fotoLogo {
@@ -42,6 +43,22 @@ ul a {
     margin: 5rem 0;
 }
 
+.container {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+    padding: 1rem;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.container3 {
+    display: flex;
+    margin: 19rem 19rem 19rem 19rem;
+}
+
 .background {
     background-color: black;
     opacity: 0.9;
@@ -53,4 +70,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    color: var(--body--text--color);
+    font-size: 2rem;
 }
