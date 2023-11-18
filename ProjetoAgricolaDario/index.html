@@ -2,48 +2,70 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Home</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="estiloHome.css">
     </head>
     <body>
-        <div class="container">
-            <div class="nav">
-                <img class="fotoLogo" src="fotoLogo.png" alt="logotipo">
-                <h1 class="nome">Dario</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="trabalheConosco.html">Trabalhe<br>Conosco</a></li>
-                    <li><a href="intitucional.html">Institucional</a></li>
-                </ul>
-            </div>
-            <div class="container2">
-                <div class="container3">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur, exercitationem et esse magni beatae fugit autem. Facilis quae maiores consequatur tempora alias quam blanditiis voluptatibus, nihil cupiditate aut ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae fuga suscipit velit illum fugit. Obcaecati aut nostrum corrupti quae voluptatum sed molestiae eaque minus ipsam, aperiam, quisquam velit? Error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, molestiae dolorum modi sit similique odio nemo distinctio consequuntur quos vitae aspernatur nam magni.</p>
 
-                    <div class="carrossel"> 
-                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="canaAcucar.jpg" alt="Primeiro Slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="imageBg.jpg" alt="Segundo Slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="canaAcucar.jpg" alt="Terceiro Slide">
-                          </div>
+        <div class="container">
+          <div class="nav">
+              <img class="fotoLogo" src="fotoLogo.png" alt="logotipo">
+              <h1 class="nome">Dario</h1>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="servicos.html">Serviços</a></li>
+                  <li><a href="trabalheConosco.html">Trabalhe<br>Conosco</a></li>
+                  <li><a href="intitucional.html">Institucional</a></li>
+              </ul>
+          </div>
+          
+          <div class="container2">
+
+                  <div class="carrossel">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="img-fluid d-block  w-auto" src="imageBg.jpg" alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="img-fluid d-block  w-auto" src="canaAcucar.jpg" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="img-fluid d-block w-auto" src="imageBg.jpg" alt="Terceiro Slide">
                         </div>
                       </div>
-                    </div> 
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                      </a>
+                    </div>
 
-                </div>
-              </div>
+                   
+                  </div>
+
+                  <div class="containerTexto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae consequatur, exercitationem et esse magni beatae fugit autem. Facilis quae maiores consequatur tempora alias quam blanditiis voluptatibus, nihil cupiditate aut ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repudiandae fuga suscipit velit illum fugit. Obcaecati aut nostrum corrupti quae voluptatum sed molestiae eaque minus ipsam, aperiam, quisquam velit? Error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, molestiae dolorum modi sit similique odio nemo distinctio consequuntur quos vitae aspernatur nam magni.</p>
+                  </div>  
+
+              
           </div>
-        
 
+      </div>
+        
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>
