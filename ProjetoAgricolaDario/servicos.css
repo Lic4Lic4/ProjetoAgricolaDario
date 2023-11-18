@@ -12,17 +12,19 @@
 }
 
 .fotoLogo {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 .nav {
-    width: 21rem;
-    height: 75rem;
+    width: 20rem;
+    height: 100%;
+    padding: 0.5%;
     background-color: var(--nav--bg--color);
     color: var(--nav--text--color);
-    display: flex;
+    display: block;
     flex-direction: column;
+    margin-right: 10%;
 
 }
 .nome {
@@ -31,8 +33,11 @@
 }
 
 ul {
-   list-style-type: none;
-   font-size: 3rem;
+    list-style-type: none;
+   display: block;
+   text-align: center;
+   margin: 0;
+   padding: 0;
 }
 
 ul a {
@@ -40,34 +45,50 @@ ul a {
     color: var(--nav--text--color);
     display: block;
     text-align: center;
-    margin: 5rem 0;
+    margin: 7rem 0;
+    font-size: 2rem;
 }
 
-.background {
-    background-color: black;
-    opacity: 0.9;
+p {
+    margin-top: 2rem;
+    width: 60vw;
+    padding-bottom: 0;
 }
 
 .container {
     display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .container2 {
     display: flex;
-    padding: 1rem;
-    background-color: black;
-    opacity: 0.9;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20%;
+    margin: 5% 0 30% 0;
+   
+    
 }
 
 .container3 {
+
     display: flex;
-    margin: 19rem 19rem 19rem 19rem;
+    justify-content: center;
 }
 
-.fotoCarrossel {
-    width: 50rem;
-    height: 30rem;
-    margin-right: 7rem;
+img {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 2%;
 }
 
 body {
@@ -78,4 +99,94 @@ body {
     background-size: cover;
     color: var(--body--text--color);
     font-size: 2rem;
+    overflow: hidden;
+}
+
+@media (max-width: 450px) {
+
+    .container {
+        display: block;
+        padding: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container2 {
+        margin-top: 15%;
+    }
+
+    p {
+        font-size: 1rem; 
+        width: 85%;
+    } 
+
+    .fotoLogo { 
+        width: 5rem;
+        height: 5rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .nav {
+        width: 100%;
+        height: 13rem;
+        padding: 0.2%;
+        background-color: var(--nav--bg--color);
+        color: var(--nav--text--color);
+        display: flex;
+        
+        
+    }
+    
+    .nome {
+        font-size: 2.5rem;
+        text-align: left;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+    
+    }
+
+    ul {
+        display: flex;
+    }
+    
+
+    ul a {
+        text-decoration: none;
+        color: var(--nav--text--color);
+        display: flex;
+        text-align: center;
+        margin: 5rem 1rem;
+        font-size: 1rem;
+        flex-direction: row;
+
+    } 
+
+    img {
+        width: 25%;
+        height: 20%;
+    }
+   
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+
+    .nav {
+        width: 100%;
+    }
+
+    .container2 {
+        margin-top: 5%;
+    }
+
+    ul a {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    ul{
+        margin-top: 25rem;
+    }
 }
