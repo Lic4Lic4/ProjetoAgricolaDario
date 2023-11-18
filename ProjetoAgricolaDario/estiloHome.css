@@ -60,10 +60,10 @@ ul a {
     margin: 19rem 19rem 19rem 19rem;
 }
 
-. {
-    width: 50rem;
-    height: 30rem;
-}
+.carrossel {
+    width: 200rem;
+    height: 200rem;
+} 
 
 p {
     margin-right: 7rem;
