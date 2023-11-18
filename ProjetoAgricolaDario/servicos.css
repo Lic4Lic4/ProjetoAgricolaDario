@@ -8,6 +8,7 @@
     font-size: 62.5%;
     --nav--bg--color: #466428;
     --nav--text--color: white;
+    --body--text--color: white;
 }
 
 .fotoLogo {
@@ -47,10 +48,34 @@ ul a {
     opacity: 0.9;
 }
 
+.container {
+    display: flex;
+}
+
+.container2 {
+    display: flex;
+    padding: 1rem;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.container3 {
+    display: flex;
+    margin: 19rem 19rem 19rem 19rem;
+}
+
+.fotoCarrossel {
+    width: 50rem;
+    height: 30rem;
+    margin-right: 7rem;
+}
+
 body {
     background-image: url("imageBg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    color: var(--body--text--color);
+    font-size: 2rem;
 }
