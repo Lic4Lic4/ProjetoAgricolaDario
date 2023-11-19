@@ -18,13 +18,15 @@
 
 .nav {
     width: 20rem;
-    height: 100vh;
+    height: 100%;
     padding: 0.5%;
+    padding-bottom: 15%;
     background-color: var(--nav--bg--color);
     color: var(--nav--text--color);
     display: block;
     flex-direction: column;
     margin-right: 10%;
+    position: sticky;
     
 }
 
@@ -165,6 +167,13 @@ body {
 
 @media (min-width: 700px) and (max-width: 1024px) {
 
+    .nav {
+        height: 100%;
+        margin: 0;
+        padding-bottom: 60%;
+
+    }
+    
     .container2 {
         margin-top: 40%;
     }
