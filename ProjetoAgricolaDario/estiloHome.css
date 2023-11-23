@@ -7,8 +7,8 @@
 :root {
     font-size: 62.5%;
     --nav--bg--color: #466428;
-    --nav--text--color: white;
-    --bg--text--color: white;
+    --nav--text--color: #e0f5cc;
+    --bg--text--color: #e0f5cc;
 }
 
 .fotoLogo { 
@@ -53,6 +53,10 @@ ul a {
     font-size: 2rem;
 } 
 
+a:hover {
+    color: rgb(2, 55, 2);
+}
+
 .container {
     display: flex;
     padding: 0;
@@ -71,13 +75,12 @@ ul a {
     height: 20%;
     margin: 5% 0 30% 0;
    
-    
 }
 
 
 .carrossel {
-    width: 60%;
-    height: 60%;
+    width: 55%;
+    height: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +91,7 @@ p {
     margin-top: 2rem;
     width: 60vw;
     padding-bottom: 0;
+    margin-bottom: rem;
 }
 
 body {
