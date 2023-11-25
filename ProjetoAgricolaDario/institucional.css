@@ -78,8 +78,12 @@ a:hover {
     align-items: center;
     width: 100vw;
     height: 20%;
-    margin-right: 15%;
-    margin-top: 5%;
+    margin-right: 0;
+    margin-top: 1%;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 .caixa {
@@ -106,7 +110,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     color: var(--body--text--color);
-    font-size: 2rem;
+    font-size: 1.7rem;
     overflow: hidden;
 }
 
