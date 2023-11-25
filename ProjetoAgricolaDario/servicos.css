@@ -27,8 +27,6 @@
     display: block;
     flex-direction: column;
     margin-right: 10%;
-    position: sticky;
-    
 }
 
 .nome {
@@ -42,7 +40,6 @@ ul {
    text-align: center;
    margin: 0;
    padding: 0;
-
 }
 
 ul a {
@@ -81,12 +78,9 @@ p {
     height: 20%;
     margin-left: 5%;
     margin-top: 1%;
-   
-    
 }
 
 .container3 {
-
     display: flex;
     justify-content: center;
 }
@@ -145,8 +139,6 @@ body {
         background-color: var(--nav--bg--color);
         color: var(--nav--text--color);
         display: flex;
-        
-        
     }
     
     .nome {
@@ -154,14 +146,12 @@ body {
         text-align: left;
         margin-left: 1.5rem;
         margin-top: 1rem;
-    
     }
 
     ul {
         display: flex;
     }
     
-
     ul a {
         text-decoration: none;
         color: var(--nav--text--color);
@@ -170,7 +160,6 @@ body {
         margin: 5rem 1rem;
         font-size: 1.3rem;
         flex-direction: row;
-
     } 
    
 }
@@ -178,10 +167,8 @@ body {
 @media (min-width: 700px) and (max-width: 1024px) {
 
     .nav {
-    
         padding-bottom: 60%;
         margin: 0;
-
     }
 
     .container2 {
@@ -196,6 +183,5 @@ body {
     ul {
         margin-top: 25rem;
     }
-
 
 }

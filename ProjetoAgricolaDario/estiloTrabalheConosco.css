@@ -21,7 +21,6 @@ body {
     width: 100vw;
     height: 100%;
     overflow: hidden;
-    
 }
 
 .fotoLogo { 
@@ -38,8 +37,6 @@ body {
     color: var(--nav--text--color);
     display: block;
     flex-direction: column;
-    position: sticky;
-    
 }
 
 .nome {
@@ -53,7 +50,6 @@ ul {
    text-align: center;
    margin: 0;
    padding: 0;
-
 }
 
 ul a {
@@ -76,14 +72,12 @@ a:hover {
 }
 
 .conteiner2 {
-
     display: flex;
     justify-content: center;
     align-items: center;
     color:#e0f5cc;
     margin-left: 25%;
     height: 100vh;
-
 }
 
 form {
@@ -99,9 +93,7 @@ form {
 }
 
 input[type="file"]{
-
     display: none;
-
 }
 
 label[type="curriculo"]{
@@ -114,11 +106,8 @@ label[type="curriculo"]{
 }
 
 label[type="curriculo"]:hover{
-
     color: #facf29;
     border: 2px solid #facf29;
-    
-
 }
 
 button {
@@ -138,7 +127,6 @@ button[type="submit"]{
 button[type="submit"]:hover{
     color: #33B300;
     border: 2px solid #33B300;
-
 }
 
 button[type="reset"]{
@@ -148,13 +136,11 @@ button[type="reset"]{
     color: white;
     background-color: rgba(0, 0, 0, 0 );
     cursor: pointer;
-
 }
 
 button[type="reset"]:hover{
     color: red;
     border: 2px solid red;
-
 }
 
 .registrar{
@@ -210,7 +196,6 @@ button[type="reset"]:hover{
         background-color: var(--nav--bg--color);
         color: var(--nav--text--color);
         display: flex;
-     
     }
     
     .nome {
@@ -218,14 +203,11 @@ button[type="reset"]:hover{
         text-align: left;
         margin-left: 1.5rem;
         margin-top: 1rem;
-    
     }
 
     ul {
         display: flex;
     }
-    
-
 
     ul a {
         text-decoration: none;
@@ -235,7 +217,6 @@ button[type="reset"]:hover{
         margin: 5rem 1rem;
         font-size: 1.3rem;
         flex-direction: row;
-
     } 
 
     form {
@@ -253,8 +234,6 @@ button[type="reset"]:hover{
         gap: 0.5rem;
     }
 
-   
-
     .conteiner {
         display: block;
         padding: 0;
@@ -269,7 +248,6 @@ button[type="reset"]:hover{
         color:white;
         margin-left: 0;
         height: 100vh;
-    
     }
 
     label[type="curriculo"]{
@@ -296,20 +274,15 @@ button[type="reset"]:hover{
         color: white;
         background-color: rgba(0, 0, 0, 0 );
         cursor: pointer;
-    
     }
-    
-   
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {
 
 
     .nav {
-    
         padding-bottom: 60%;
         margin: 0;
-
     }
 
     .container2 {
@@ -341,10 +314,8 @@ button[type="reset"]:hover{
     }
     
     .conteiner2 {
-    
         margin-top: 20%;
         margin: 0;
-    
     }
 
     label[type="curriculo"]{
@@ -371,9 +342,6 @@ button[type="reset"]:hover{
         color: white;
         background-color: rgba(0, 0, 0, 0 );
         cursor: pointer;
-    
     }
-    
-   
 }
 
