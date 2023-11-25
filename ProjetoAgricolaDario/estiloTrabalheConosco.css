@@ -157,6 +157,43 @@ button[type="reset"]:hover{
 
 }
 
+.registrar{
+
+    text-decoration: none;
+    color: white;
+    
+}
+
+.bregistrar{
+
+    font-size: 3rem;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0 );
+    cursor: pointer;
+}
+
+.registrar:hover{
+
+    text-decoration: none;
+    color: #facf29;
+    
+}
+
+.bregistrar:hover{
+
+    font-size: 3rem;
+    border-radius: 5px;
+    border: 2px solid #facf29;
+    color: white;
+    background-color: rgba(0, 0, 0, 0 );
+    cursor: pointer;
+
+}
+
+
+
 @media (max-width: 450px) {
 
     .fotoLogo { 

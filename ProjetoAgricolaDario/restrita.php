@@ -1,9 +1,14 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estiloTrabalheConosco.css">
     <title>Trabalhe conosco</title>
 </head>
@@ -15,15 +20,14 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="trabalheConosco.php">Trabalhe<br>Conosco</a></li>
+                <li><a href="login.php">Trabalhe<br>Conosco</a></li>
                 <li><a href="intitucional.html">Institucional</a></li>
             </ul>
         </div>
-
-        
         <div class="conteiner2">
-
-            <form enctype="multipart/form-data" action="" method="post">
+        
+    
+        <form enctype="multipart/form-data" action="" method="post">
     
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" required>
@@ -31,25 +35,23 @@
                 <label for="sobrenome">Sobrenome</label>
                 <input type="text" id="sobrenome" name="sobrenome" required>
     
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-    
                 <label for="telefone">Telefone</label>
                 <input type="number" id="telefone" name="telefone" required>
             
                 <div class="botoes">
 
                 <label type="curriculo"for="curriculo">Selecionar Currículo</label>
-                <input type="file" id="curriculo" name="curriculo" required> <br>
+                <input type="file" id="curriculo" name="curriculo" required>
     
                 
                     <button type="submit" name="acao" id="Enviar">Enviar</button>
                     <button type="reset"  id="Limpar">Limpar</button>
 
-<!--                     <?php
+                    <?php
 
     include("conexao.php");
-
+    session_start();
+    $email = $_SESSION['username'];
     $msg = false;
 
     if(isset($_FILES['curriculo'])){
@@ -64,17 +66,31 @@
 
         $novo_nome = md5(time()).$extensao;
         $diretorio = "arquivos/";
-        $nome = $_POST["nome"];
-        $sobrenome = $_POST["sobrenome"];
-        $email = $_POST["email"];
-        $telefone = $_POST["telefone"];
+        $nome = $_POST['nome'];
+        $sobrenome = $_POST['sobrenome'];
+        $telefone = $_POST['telefone'];
+        
+        
 
 
         move_uploaded_file($_FILES['curriculo']['tmp_name'], $diretorio.$novo_nome);
+        $sql = "SELECT * FROM curriculos WHERE email = '$email'"; //escrevendo a consulta
+        $result = $mysqli->query($sql); //executando a consulta
 
-        $sql_code = "INSERT INTO curriculos(id, nome, sobrenome, email, telefone, arquivo) VALUES(NULL, '$nome', '$sobrenome', '$email', '$telefone', '$novo_nome')";
+        if($result->num_rows > 0){
+           
+            $sql = "UPDATE curriculos SET nome = '$nome' WHERE email = '$email'";
+            $mysqli->query($sql);
+            $sql = "UPDATE curriculos SET sobrenome = '$sobrenome' WHERE email = '$email'";
+            $mysqli->query($sql);
+            $sql = "UPDATE curriculos SET telefone = '$telefone' WHERE email = '$email'";
+            $mysqli->query($sql);
+            $sql = "UPDATE curriculos SET arquivo = '$novo_nome' WHERE email = '$email'";
+            $mysqli->query($sql);           
 
-        if($mysqli -> query($sql_code)){
+        }
+
+        if($mysqli -> query($sql)){
 
             $msg = "Arquivo enviado com sucesso!";
             $mail = "agricolasdario@gmail.com";
@@ -105,21 +121,21 @@
 
 
 
-?> -->
+?>
 
-                <!-- <?php if($msg != false) echo "<p> $msg </p?>;"?> -->
+                <?php if($msg != false) echo "<p> $msg </p?>;"?>
+                </div>
                 
             </form>
 
         </div>
-
     </div>
 </body>
 </html>
 
-<!-- <?php
+<?php
 
 
 
 
-?> -->
+?>
