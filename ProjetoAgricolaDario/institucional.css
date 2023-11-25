@@ -33,7 +33,6 @@ p {
     display: block;
     flex-direction: column;
     position: sticky;
-
 }
 
 .nome {
@@ -56,7 +55,6 @@ p {
     text-align: center;
     margin: 7rem 0;
     font-size: 2rem;
-    
 }
 
 a:hover {
@@ -129,7 +127,6 @@ body {
         width: 85%;
         margin: 10%;
         margin-top: 5%;
-
     } 
 
     .fotoLogo { 
@@ -147,8 +144,6 @@ body {
         background-color: var(--nav--bg--color);
         color: var(--nav--text--color);
         display: flex;
-
-        
     }
     
     .nome {
@@ -157,7 +152,6 @@ body {
         margin-left: 1.5rem;
         margin-top: 1rem;
         width: 10vw;
-    
     }
 
     .navUl {
@@ -173,7 +167,6 @@ body {
         margin: 5rem 1rem;
         font-size: 1.3rem;
         flex-direction: row;
-
     } 
 
     .caixa {
@@ -201,9 +194,7 @@ body {
 @media (min-width: 700px) and (max-width: 1024px) {
 
     .nav {
-    
         padding-bottom: 60%;
-
     }
 
     .nome {
@@ -224,7 +215,6 @@ body {
         margin-top: 25rem;
     }
     
-
     p {
         font-size: 2rem; 
         margin: 5%;
