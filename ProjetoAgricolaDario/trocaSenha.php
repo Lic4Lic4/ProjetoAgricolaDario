@@ -63,7 +63,7 @@
 
                     $sql = "UPDATE curriculos SET senha = '$novaSenha' WHERE email = '$email'";
                     $mysqli->query($sql);
-                    echo "Senha atualiza, você sera redirecionado a página de login";
+                    echo "Senha atualizada, você sera redirecionado a página de login";
                     header("Location: login.php");
                     exit();
 
